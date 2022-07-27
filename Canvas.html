@@ -1,0 +1,29 @@
+<html>
+<body>
+    <head>
+        <style>
+            canvas{background-color:red}
+            canvas{border: 5px; color:blue;}
+        </style>
+    </head>
+
+<h1>The canvas height and width attributes</h1>
+
+<canvas id="myCanvas" width="600" height="300" style="border:1px solid">
+</canvas>
+
+<script>
+var c = document.getElementById("myCanvas").style.borderColor = "red";
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#92B901";
+//document.getElementById("myCanvas").style.borderColor = "blue";
+ctx.fillRect(50, 50, 100, 100);
+</script>
+<!--<script>
+    function myFunction() {
+      document.getElementById("myDiv").style.borderColor = "blue";
+    }
+    </script>-->
+
+</body>
+</html>
