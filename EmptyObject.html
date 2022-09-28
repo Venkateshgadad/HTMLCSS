@@ -1,0 +1,58 @@
+<html>
+      
+<head>
+    <title>
+        How to check an object is 
+        empty using JavaScript?
+    </title>
+</head>
+  
+<body>
+    <h1 style="color: green">
+        Empty Object
+    </h1>
+      
+    <b>
+        How to check an object is
+        empty using JavaScript?
+    </b>
+      
+    <p>
+        Click on the button to check
+        if the object is empty
+    </p>
+      
+    <p>Output for empty object: 
+        <span class="outputEmpty"></span>
+    </p>
+      
+    <p>Output for non empty object: 
+        <span class="outputNonEmpty"></span>
+    </p>
+  
+    <button onclick="checkObject()">
+        Click here
+    </button>
+      
+    <!-- Script to check the object is empty or not -->
+    <script type="text/javascript">
+        function checkObject() {
+              
+            let emptyObj = {}
+            let nonEmptyObj = {
+                title: 'Title 1',
+                info: 'Sample Info'
+            }
+  
+            ans1 = (Object.keys(emptyObj).length === 0)
+            document.querySelector('.outputEmpty').textContent
+                    = ans1;
+  
+            ans2 = (Object.keys(nonEmptyObj).length === 0)
+            document.querySelector('.outputNonEmpty').textContent
+                    = ans2;
+        }
+    </script>
+</body>
+  
+</html>              
